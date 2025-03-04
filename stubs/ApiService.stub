@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\Api\{{namespace}};
+namespace App\Services\{{namespace}};
 
 use Throwable;
 use App\Models\{{model}};
