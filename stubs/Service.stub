@@ -43,6 +43,8 @@ class {{name}}Service
      */
     public function create(array $data): {{model}}
     {
+        
+        $data=FileHelper::handleFileUploads($data);
         return DB::transaction(fn() => $this->_model::create($data));
     }
 
